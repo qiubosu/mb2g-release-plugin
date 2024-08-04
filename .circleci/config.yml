@@ -41,4 +41,4 @@ jobs:
             - run: git config user.name "Via CircleCI Build"
             # run tests!
             #- run: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
-            - run: mvn integration-test
+            - run: mvn deploy -s .circleci/settings.xml
